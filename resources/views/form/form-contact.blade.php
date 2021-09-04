@@ -19,7 +19,7 @@
                             <input type="text" name="email" class="form-control" placeholder="E-mail">
                         </div>
                         <div class="form-group col-md-4">
-                            <input type="text" name="phone" class="form-control" placeholder="Phone number">
+                            <input type="text" name="phone" class="form-control phone" placeholder="Phone number">
                         </div>
                     </div>
                     <div class="row">

@@ -5,6 +5,8 @@ use App\Models\ContactInfo;
 use App\Models\FranchiseInfo;
 use Illuminate\Http\Request;
 use SebastianBergmann\CodeUnit\Exception;
+// For CSV File
+//use Maatwebsite\Excel\Facades\Excel;
 
 /**
  * Creating a Contact Controller class
@@ -68,5 +70,24 @@ class ContactController extends Controller
         }
     }
 
+    /**
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
+    public function importFileCreate()
+    {
+        return view('form.form-importFile');
+    }
 
+    /**
+     * Create the import file request
+     *
+     * @param Request $request
+     */
+    public function importFile(Request $request)
+    {
+        /**
+         *
+         */
+        echo 'teste';
+    }
 }

@@ -28,4 +28,6 @@ Route::prefix('/contact')->group(function (){
     Route::get('/', [\App\Http\Controllers\ContactController::class, 'index'])->name('contact');
     Route::get('/create', [\App\Http\Controllers\ContactController::class, 'create'])->name('contact-create');
     Route::post('/store', [\App\Http\Controllers\ContactController::class, 'store'])->name('contact-store');
+    Route::get('/import-file', [\App\Http\Controllers\ContactController::class, 'importFileCreate'])->name('contact-import');
+    Route::post('/import-file/store', [\App\Http\Controllers\ContactController::class, 'importFile'])->name('import-store');
 });

@@ -5,14 +5,12 @@
         <div class="card">
             <div class="card-header">{{ __('Add cotnact info') }}</div>
 
-
-
             <div class="card-body">
                 <div class="mb-4">
                     <a href="{{route('contact-create')}}" class="btn btn-success mr-3">
                         Add New contact
                     </a>
-                    <a href="" class="btn btn-outline-info">
+                    <a href="{{route('contact-import')}}" class="btn btn-outline-info">
                         Import contacts by CSV file
                     </a>
                 </div>
@@ -35,7 +33,7 @@
                             <th>{{$contact->date_birth}}</th>
                             <th>{{$contact->phone}}</th>
                             <th>{{$contact->address}}</th>
-                            <th>{{$contact->credcard}}</th>
+                            <th>XXXXXXXXXXXX{{substr($contact->credcard, -4, 4)}}</th>
                             <th>{{$contact->franchise}}</th>
                             <th>{{$contact->email}}</th>
                         </tr>
