@@ -20,3 +20,12 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+/**
+ * Contact route group
+ */
+Route::prefix('/contact')->group(function (){
+    Route::get('/', [\App\Http\Controllers\ContactController::class, 'index'])->name('contact');
+    Route::get('/create', [\App\Http\Controllers\ContactController::class, 'create'])->name('contact-create');
+    Route::post('/store', [\App\Http\Controllers\ContactController::class, 'store'])->name('contact-store');
+});
