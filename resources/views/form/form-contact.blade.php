@@ -9,6 +9,11 @@
                 @if(!empty($msg_success))
                     <div class="alert alert-success"> {{ $msg_success }}</div>
                 @endif
+                @if(session()->has('msg_error'))
+                    <div class="alert alert-danger">
+                        {{ session()->get('msg_error') }}
+                    </div>
+                @endif
                 <form action="{{route('contact-store')}}" class="" enctype="multipart/form-data" method="post">
                     @csrf
                     <div class="row">

@@ -14,7 +14,7 @@
                         Import contacts by CSV file
                     </a>
                 </div>
-                <table class="table table-bordered table-striped table-dark">
+                <table class="table table-bordered table-striped table-dark datatable">
                     <theader>
                         <tr>
                             <th>Name</th>
@@ -33,13 +33,16 @@
                             <th>{{$contact->date_birth}}</th>
                             <th>{{$contact->phone}}</th>
                             <th>{{$contact->address}}</th>
-                            <th>XXXXXXXXXXXX{{substr($contact->credcard, -4, 4)}}</th>
+                            <th>XXXXXXXXXXXX{{substr(\Crypt::decrypt($contact->credcard), -4, 4)}}</th>
                             <th>{{$contact->franchise}}</th>
                             <th>{{$contact->email}}</th>
                         </tr>
                     @endforeach
                     </tbody>
                 </table>
+                <div class="d-flex justify-content-center mt-4 mb-4">
+                    {{ $listContact->links() }}
+                </div>
             </div>
         </div>
 @endsection

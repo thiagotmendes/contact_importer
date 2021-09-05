@@ -34,6 +34,9 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
+                            <a href="{{route('home')}}" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
                             <a href="{{route('contact')}}" class="nav-link">Contacts</a>
                         </li>
                     </ul>

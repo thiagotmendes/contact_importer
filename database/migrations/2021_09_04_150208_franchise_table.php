@@ -16,7 +16,7 @@ class FranchiseTable extends Migration
         Schema::create('franchise_info', function (Blueprint $table) {
             $table->id();
             $table->string('franchise', 155);
-            $table->string('credcard', 16);
+            $table->string('credcard', 255);
             $table->timestamps();
         });
     }

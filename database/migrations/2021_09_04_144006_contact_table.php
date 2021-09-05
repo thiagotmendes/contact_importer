@@ -16,8 +16,8 @@ class ContactTable extends Migration
         Schema::create('contact_info', function (Blueprint $table) {
             $table->id();
             $table->string('name', 255);
-            $table->char('date_birth', 10);
-            $table->char('phone', 14);
+            $table->char('date_birth', 12);
+            $table->char('phone', 20);
             $table->string('address', 255);
             $table->timestamps();
         });

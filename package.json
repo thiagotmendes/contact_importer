@@ -24,6 +24,9 @@
         "sass-loader": "^11.0.1"
     },
     "dependencies": {
+        "datatables": "^1.10.18",
+        "datatables.net": "^1.11.1",
+        "datatables.net-editor": "^2.0.5",
         "imask": "^6.1.0"
     }
 }
