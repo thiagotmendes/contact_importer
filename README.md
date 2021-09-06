@@ -49,3 +49,10 @@ If have problems with composer install use:
 ```
 COMPOSER_MEMORY_LIMIT=-1 composer install
 ```
+
+
+banco_teste
+thiago_mendes
+S0ulhunt3r#
+
+mysql380.umbler.com
