@@ -15,6 +15,12 @@ Can you access the system here:
 
 [Heroku App](http://thiago-contact-importer.herokuapp.com/)
 
+User test:
+
+User: teste@teste.com
+
+Pass: test123
+
 ```
 Menu contact > show the datagrid with contact informations
 
