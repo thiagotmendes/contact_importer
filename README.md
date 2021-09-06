@@ -11,6 +11,10 @@
 
 The contact importer are a test, using MySql database and PHP Laravel.
 
+Can you access the system here:
+
+[Heroku App](http://thiago-contact-importer.herokuapp.com/)
+
 ```
 Menu contact > show the datagrid with contact informations
 
@@ -51,8 +55,3 @@ COMPOSER_MEMORY_LIMIT=-1 composer install
 ```
 
 
-banco_teste
-thiago_mendes
-S0ulhunt3r#
-
-mysql380.umbler.com
